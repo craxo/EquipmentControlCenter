@@ -1,0 +1,6 @@
+@EquipmentControlCenter.CncService_HostAddress = http://localhost:5057
+
+GET {{EquipmentControlCenter.CncService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

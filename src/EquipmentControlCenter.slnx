@@ -1,0 +1,20 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/EquipmentControlCenter.Desktop/">
+    <Project Path="EquipmentControlCenter.Desktop/EquipmentControlCenter.Desktop.Browser/EquipmentControlCenter.Desktop.Browser.csproj" />
+    <Project Path="EquipmentControlCenter.Desktop/EquipmentControlCenter.Desktop.Desktop/EquipmentControlCenter.Desktop.Desktop.csproj" />
+    <Project Path="EquipmentControlCenter.Desktop/EquipmentControlCenter.Desktop/EquipmentControlCenter.Desktop.csproj" />
+  </Folder>
+  <Folder Name="/Infrastructure/">
+    <Project Path="Infrastructure/EquipmentControlCenter.ServiceDiscovery/EquipmentControlCenter.ServiceDiscovery.csproj" />
+  </Folder>
+  <Folder Name="/Services/">
+    <Project Path="Services/EquipmentControlCenter.CncService/EquipmentControlCenter.CncService.csproj" />
+  </Folder>
+  <Project Path="EquipmentControlCenter.AppHost/EquipmentControlCenter.AppHost.csproj" />
+  <Project Path="EquipmentControlCenter.ServiceDefaults/EquipmentControlCenter.ServiceDefaults.csproj" />
+</Solution>
