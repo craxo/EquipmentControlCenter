@@ -13,21 +13,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18105148-986f-4e9a-a4a0-3588890dbea3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.EquipmentControlCenter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EquipmentControlCenter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EquipmentControlCenter.AppHost/EquipmentControlCenter.AppHost.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/EquipmentControlCenter.AppHost/EquipmentControlCenter.AppHost.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EquipmentControlCenter.AppHost/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EquipmentControlCenter.AppHost/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EquipmentControlCenter.Desktop/Directory.Packages.props" beforeDir="false" afterPath="$PROJECT_DIR$/EquipmentControlCenter.Desktop/Directory.Packages.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EquipmentControlCenter.Desktop/EquipmentControlCenter.Desktop/App.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EquipmentControlCenter.Desktop/EquipmentControlCenter.Desktop/App.axaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EquipmentControlCenter.Desktop/EquipmentControlCenter.Desktop/EquipmentControlCenter.Desktop.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/EquipmentControlCenter.Desktop/EquipmentControlCenter.Desktop/EquipmentControlCenter.Desktop.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EquipmentControlCenter.Desktop/EquipmentControlCenter.Desktop/ViewModels/MainViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EquipmentControlCenter.Desktop/EquipmentControlCenter.Desktop/ViewModels/MainViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EquipmentControlCenter.Desktop/EquipmentControlCenter.Desktop/Views/MainView.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/EquipmentControlCenter.Desktop/EquipmentControlCenter.Desktop/Views/MainView.axaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EquipmentControlCenter.Shared/Class1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EquipmentControlCenter.Shared/EquipmentControlCenter.Shared.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/EquipmentControlCenter.Shared/EquipmentControlCenter.Shared.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/EquipmentControlCenter.CncService/CncMonitoringService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/EquipmentControlCenter.CncService/CncMonitoringService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/EquipmentControlCenter.CncService/EquipmentControlCenter.CncService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Services/EquipmentControlCenter.CncService/EquipmentControlCenter.CncService.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/EquipmentControlCenter.CncService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/EquipmentControlCenter.CncService/Program.cs" afterDir="false" />
-    </list>
+    <list default="true" id="18105148-986f-4e9a-a4a0-3588890dbea3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,9 +36,11 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/42307cd86fff251c89de931d437977f5b73ecaa66d9928114e7379a358bb/ResourceBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bd1d5c50194fea68ff3559c160230b0ab50f5acf4ce3061bffd6d62958e2182/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ce37be1a06b16c6faa02038d2cc477dd3bca5b217ceeb41c5f2ad45c1bf9/ServiceProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../.claude/settings.local.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Services/EquipmentControlCenter.CncService/CncMonitoringService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Services/EquipmentControlCenter.CncService/ConsulConfigurationProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Services/EquipmentControlCenter.CncService/ConsulServiceRegistration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Services/EquipmentControlCenter.PrinterService/appsettings.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -271,7 +259,7 @@
       <workItem from="1763163313391" duration="375000" />
       <workItem from="1763210454322" duration="184000" />
       <workItem from="1763212563509" duration="3453000" />
-      <workItem from="1765323697011" duration="4052000" />
+      <workItem from="1765323697011" duration="4422000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial project structure for EquipmentControlCenter, including Desktop, Service, and AppHost components, with support for Avalonia, service discovery, and logging configurations.">
       <option name="closed" value="true" />
@@ -281,7 +269,23 @@
       <option name="project" value="LOCAL" />
       <updated>1763214997112</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add CNC and Printer service modules with structured control definitions, execution logic, and messaging infrastructure">
+      <option name="closed" value="true" />
+      <created>1765327801057</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1765327801057</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add comprehensive README for Equipment Control Center detailing architecture, features, setup, and usage instructions">
+      <option name="closed" value="true" />
+      <created>1765328062795</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1765328062795</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,7 +296,9 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Add initial project structure for EquipmentControlCenter, including Desktop, Service, and AppHost components, with support for Avalonia, service discovery, and logging configurations." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add initial project structure for EquipmentControlCenter, including Desktop, Service, and AppHost components, with support for Avalonia, service discovery, and logging configurations." />
+    <MESSAGE value="Add CNC and Printer service modules with structured control definitions, execution logic, and messaging infrastructure" />
+    <MESSAGE value="Add comprehensive README for Equipment Control Center detailing architecture, features, setup, and usage instructions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add comprehensive README for Equipment Control Center detailing architecture, features, setup, and usage instructions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
