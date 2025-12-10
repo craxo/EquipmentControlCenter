@@ -18,6 +18,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Services\EquipmentControlCenter.CncService\EquipmentControlCenter.CncService.csproj" />
+    <ProjectReference Include="..\Services\EquipmentControlCenter.PrinterService\EquipmentControlCenter.PrinterService.csproj" />
+    <ProjectReference Include="..\EquipmentControlCenter.Desktop\EquipmentControlCenter.Desktop.Desktop\EquipmentControlCenter.Desktop.Desktop.csproj" />
   </ItemGroup>
 
 </Project>

@@ -3,14 +3,142 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:vm="using:EquipmentControlCenter.Desktop.ViewModels"
-             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             xmlns:models="using:EquipmentControlCenter.Desktop.Models"
+             mc:Ignorable="d" d:DesignWidth="1200" d:DesignHeight="700"
              x:Class="EquipmentControlCenter.Desktop.Views.MainView"
              x:DataType="vm:MainViewModel">
-  <Design.DataContext>
-    <!-- This only sets the DataContext for the previewer in an IDE,
-         to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
-    <vm:MainViewModel />
-  </Design.DataContext>
 
-  <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+  <Grid RowDefinitions="Auto,*" Margin="10">
+
+    <!-- Header -->
+    <StackPanel Grid.Row="0" Margin="0,0,0,10">
+      <TextBlock Text="Equipment Control Center"
+                 FontSize="24"
+                 FontWeight="Bold"/>
+      <TextBlock Text="Monitor and control connected equipment services"
+                 FontSize="12"
+                 Opacity="0.7"/>
+    </StackPanel>
+
+    <!-- Main Content -->
+    <Grid Grid.Row="1" ColumnDefinitions="300,*">
+
+      <!-- Service List -->
+      <Border Grid.Column="0"
+              BorderBrush="#E0E0E0"
+              BorderThickness="1"
+              CornerRadius="4"
+              Padding="10"
+              Margin="0,0,10,0">
+        <DockPanel>
+          <TextBlock DockPanel.Dock="Top"
+                     Text="Connected Services"
+                     FontWeight="SemiBold"
+                     Margin="0,0,0,10"/>
+
+          <ListBox ItemsSource="{Binding Services}"
+                   SelectedItem="{Binding SelectedService}">
+            <ListBox.ItemTemplate>
+              <DataTemplate x:DataType="models:EquipmentService">
+                <StackPanel Margin="5">
+                  <TextBlock Text="{Binding ServiceName}"
+                             FontWeight="SemiBold"/>
+                  <TextBlock Text="{Binding MachineName}"
+                             FontSize="11"
+                             Opacity="0.7"/>
+                  <StackPanel Orientation="Horizontal" Margin="0,3,0,0">
+                    <Ellipse Width="8" Height="8" Margin="0,0,5,0" Fill="LimeGreen"/>
+                    <TextBlock Text="{Binding HealthStatus}"
+                               FontSize="10"/>
+                  </StackPanel>
+                </StackPanel>
+              </DataTemplate>
+            </ListBox.ItemTemplate>
+          </ListBox>
+        </DockPanel>
+      </Border>
+
+      <!-- Control Panel -->
+      <Border Grid.Column="1"
+              BorderBrush="#E0E0E0"
+              BorderThickness="1"
+              CornerRadius="4"
+              Padding="10">
+        <DockPanel>
+          <!-- Service Info Header -->
+          <StackPanel DockPanel.Dock="Top"
+                      Margin="0,0,0,20"
+                      IsVisible="{Binding SelectedService, Converter={x:Static ObjectConverters.IsNotNull}}">
+            <TextBlock Text="{Binding SelectedService.ServiceName}"
+                       FontSize="20"
+                       FontWeight="Bold"/>
+            <Grid ColumnDefinitions="Auto,*" RowDefinitions="Auto,Auto,Auto" Margin="0,5,0,0">
+              <TextBlock Grid.Row="0" Grid.Column="0" Text="Machine:" Opacity="0.7" Margin="0,0,10,0"/>
+              <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding SelectedService.MachineName}"/>
+
+              <TextBlock Grid.Row="1" Grid.Column="0" Text="Type:" Opacity="0.7" Margin="0,0,10,0"/>
+              <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding SelectedService.EquipmentType}"/>
+
+              <TextBlock Grid.Row="2" Grid.Column="0" Text="Uptime:" Opacity="0.7" Margin="0,0,10,0"/>
+              <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding SelectedService.Uptime, StringFormat='{}{0:hh\\:mm\\:ss}'}"/>
+            </Grid>
+          </StackPanel>
+
+          <!-- Controls -->
+          <ScrollViewer IsVisible="{Binding SelectedService, Converter={x:Static ObjectConverters.IsNotNull}}">
+            <ItemsControl ItemsSource="{Binding AvailableControls}">
+              <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                  <StackPanel Spacing="15"/>
+                </ItemsPanelTemplate>
+              </ItemsControl.ItemsPanel>
+
+              <ItemsControl.ItemTemplate>
+                <DataTemplate x:DataType="models:ControlViewModel">
+                  <Border BorderBrush="#E0E0E0"
+                          BorderThickness="1"
+                          CornerRadius="4"
+                          Padding="15">
+                    <StackPanel>
+                      <!-- Control Header -->
+                      <TextBlock Text="{Binding DisplayName}"
+                                 FontWeight="SemiBold"
+                                 FontSize="14"/>
+                      <TextBlock Text="{Binding Description}"
+                                 FontSize="11"
+                                 Opacity="0.7"
+                                 Margin="0,2,0,10"
+                                 IsVisible="{Binding Description, Converter={x:Static ObjectConverters.IsNotNull}}"/>
+
+                      <!-- Button Control -->
+                      <Button Content="{Binding DisplayName}"
+                              Command="{Binding ExecuteCommand}"
+                              IsEnabled="{Binding IsEnabled}"
+                              IsVisible="{Binding Type, Converter={x:Static ObjectConverters.IsNotNull}}"/>
+
+                    </StackPanel>
+                  </Border>
+                </DataTemplate>
+              </ItemsControl.ItemTemplate>
+            </ItemsControl>
+          </ScrollViewer>
+
+          <!-- No Service Selected Message -->
+          <StackPanel HorizontalAlignment="Center"
+                      VerticalAlignment="Center"
+                      IsVisible="{Binding SelectedService, Converter={x:Static ObjectConverters.IsNull}}">
+            <TextBlock Text="No service selected"
+                       FontSize="16"
+                       Opacity="0.5"
+                       TextAlignment="Center"/>
+            <TextBlock Text="Select a service from the list to view controls"
+                       FontSize="12"
+                       Opacity="0.4"
+                       TextAlignment="Center"
+                       Margin="0,5,0,0"/>
+          </StackPanel>
+        </DockPanel>
+      </Border>
+    </Grid>
+  </Grid>
 </UserControl>
