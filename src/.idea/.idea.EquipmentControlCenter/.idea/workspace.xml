@@ -13,7 +13,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18105148-986f-4e9a-a4a0-3588890dbea3" name="Changes" comment="" />
+    <list default="true" id="18105148-986f-4e9a-a4a0-3588890dbea3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EquipmentControlCenter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EquipmentControlCenter/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EquipmentControlCenter.Desktop/EquipmentControlCenter.Desktop.sln" beforeDir="false" afterPath="$PROJECT_DIR$/EquipmentControlCenter.Desktop/EquipmentControlCenter.Desktop.sln" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,20 +26,18 @@
     <option name="firstShow" value="false" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="4" />
+    <option name="cachedIndexableFilesCount" value="5" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Immediate Window" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1b657e20df965e9e8880a0f8134fe042eac51bef629854e59231e1cdd361a/HttpConnection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3e38f32ecb33ee426d7ccf44a00c877d32e4ea2186f983d3fe355a41d51/HttpConnectionPool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/42307cd86fff251c89de931d437977f5b73ecaa66d9928114e7379a358bb/ResourceBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bd1d5c50194fea68ff3559c160230b0ab50f5acf4ce3061bffd6d62958e2182/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ce37be1a06b16c6faa02038d2cc477dd3bca5b217ceeb41c5f2ad45c1bf9/ServiceProvider.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../.claude/settings.local.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Services/EquipmentControlCenter.CncService/CncMonitoringService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Services/EquipmentControlCenter.CncService/ConsulConfigurationProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Services/EquipmentControlCenter.CncService/ConsulServiceRegistration.cs" root0="FORCE_HIGHLIGHTING" />
@@ -58,25 +59,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.EquipmentControlCenter.AppHost: http.executor&quot;: &quot;Debug&quot;,
-    &quot;Aspire Host.EquipmentControlCenter.AppHost: http.executor&quot;: &quot;Debug&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;SolutionBuilderGeneralOptionsPage&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.EquipmentControlCenter.AppHost: http.executor": "Debug",
+    "Aspire Host.EquipmentControlCenter.AppHost: http.executor": "Debug",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Aspire Host.EquipmentControlCenter.AppHost: http">
     <configuration name="EquipmentControlCenter.AppHost: http" type="AspireHostConfiguration" factoryName="Aspire Host" activateToolWindowBeforeRun="false">
       <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/EquipmentControlCenter.AppHost/EquipmentControlCenter.AppHost.csproj" />
@@ -259,7 +260,8 @@
       <workItem from="1763163313391" duration="375000" />
       <workItem from="1763210454322" duration="184000" />
       <workItem from="1763212563509" duration="3453000" />
-      <workItem from="1765323697011" duration="4422000" />
+      <workItem from="1765323697011" duration="4728000" />
+      <workItem from="1765405464208" duration="2459000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial project structure for EquipmentControlCenter, including Desktop, Service, and AppHost components, with support for Avalonia, service discovery, and logging configurations.">
       <option name="closed" value="true" />
@@ -285,7 +287,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765328062795</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update IDE workspace configuration and task metadata">
+      <option name="closed" value="true" />
+      <created>1765328255847</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1765328255847</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,7 +308,8 @@
     <MESSAGE value="Add initial project structure for EquipmentControlCenter, including Desktop, Service, and AppHost components, with support for Avalonia, service discovery, and logging configurations." />
     <MESSAGE value="Add CNC and Printer service modules with structured control definitions, execution logic, and messaging infrastructure" />
     <MESSAGE value="Add comprehensive README for Equipment Control Center detailing architecture, features, setup, and usage instructions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add comprehensive README for Equipment Control Center detailing architecture, features, setup, and usage instructions" />
+    <MESSAGE value="Update IDE workspace configuration and task metadata" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update IDE workspace configuration and task metadata" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
