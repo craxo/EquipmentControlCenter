@@ -51,16 +51,44 @@ public class ConsulServiceRegistration : IHostedService
         };
 
         _logger.LogInformation("Registering service {ServiceId} with Consul", serviceId);
-        await _consulClient.Agent.ServiceRegister(registration, cancellationToken);
-        _logger.LogInformation("Service registered successfully");
+
+        // Retry logic for Consul registration
+        int maxRetries = 5;
+        int retryDelayMs = 2000;
+
+        for (int i = 0; i < maxRetries; i++)
+        {
+            try
+            {
+                await _consulClient.Agent.ServiceRegister(registration, cancellationToken);
+                _logger.LogInformation("Service registered successfully with Consul");
+                return;
+            }
+            catch (Exception ex) when (i < maxRetries - 1)
+            {
+                _logger.LogWarning(ex, "Failed to register with Consul (attempt {Attempt}/{MaxRetries}). Retrying in {Delay}ms...",
+                    i + 1, maxRetries, retryDelayMs);
+                await Task.Delay(retryDelayMs, cancellationToken);
+            }
+        }
+
+        _logger.LogError("Failed to register with Consul after {MaxRetries} attempts. Service will continue without Consul registration.", maxRetries);
     }
 
     public async Task StopAsync(CancellationToken cancellationToken)
     {
         if (_registrationId != null)
         {
-            _logger.LogInformation("Deregistering service {ServiceId} from Consul", _registrationId);
-            await _consulClient.Agent.ServiceDeregister(_registrationId, cancellationToken);
+            try
+            {
+                _logger.LogInformation("Deregistering service {ServiceId} from Consul", _registrationId);
+                await _consulClient.Agent.ServiceDeregister(_registrationId, cancellationToken);
+                _logger.LogInformation("Service deregistered successfully from Consul");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogWarning(ex, "Failed to deregister service {ServiceId} from Consul", _registrationId);
+            }
         }
     }
 }

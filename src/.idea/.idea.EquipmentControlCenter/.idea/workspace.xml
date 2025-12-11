@@ -15,7 +15,13 @@
   <component name="ChangeListManager">
     <list default="true" id="18105148-986f-4e9a-a4a0-3588890dbea3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EquipmentControlCenter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EquipmentControlCenter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EquipmentControlCenter.Desktop/EquipmentControlCenter.Desktop.sln" beforeDir="false" afterPath="$PROJECT_DIR$/EquipmentControlCenter.Desktop/EquipmentControlCenter.Desktop.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EquipmentControlCenter.Desktop/EquipmentControlCenter.Desktop/Models/ControlViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EquipmentControlCenter.Desktop/EquipmentControlCenter.Desktop/Models/ControlViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EquipmentControlCenter.Desktop/EquipmentControlCenter.Desktop/Views/MainView.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/EquipmentControlCenter.Desktop/EquipmentControlCenter.Desktop/Views/MainView.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/EquipmentControlCenter.CncService/ConsulServiceRegistration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/EquipmentControlCenter.CncService/ConsulServiceRegistration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/EquipmentControlCenter.CncService/Services/CncControlExecutor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/EquipmentControlCenter.CncService/Services/CncControlExecutor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/EquipmentControlCenter.CncService/Services/ServiceRegistrationPublisher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/EquipmentControlCenter.CncService/Services/ServiceRegistrationPublisher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/EquipmentControlCenter.PrinterService/Services/PrinterControlExecutor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/EquipmentControlCenter.PrinterService/Services/PrinterControlExecutor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/EquipmentControlCenter.PrinterService/Services/ServiceRegistrationPublisher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/EquipmentControlCenter.PrinterService/Services/ServiceRegistrationPublisher.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,7 +267,7 @@
       <workItem from="1763210454322" duration="184000" />
       <workItem from="1763212563509" duration="3453000" />
       <workItem from="1765323697011" duration="4728000" />
-      <workItem from="1765405464208" duration="2459000" />
+      <workItem from="1765405464208" duration="3724000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial project structure for EquipmentControlCenter, including Desktop, Service, and AppHost components, with support for Avalonia, service discovery, and logging configurations.">
       <option name="closed" value="true" />
@@ -295,7 +301,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765328255847</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Remove iOS and Android project references from solution file">
+      <option name="closed" value="true" />
+      <created>1765417306808</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1765417306808</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,7 +323,9 @@
     <MESSAGE value="Add CNC and Printer service modules with structured control definitions, execution logic, and messaging infrastructure" />
     <MESSAGE value="Add comprehensive README for Equipment Control Center detailing architecture, features, setup, and usage instructions" />
     <MESSAGE value="Update IDE workspace configuration and task metadata" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update IDE workspace configuration and task metadata" />
+    <MESSAGE value="Remove iOS and Android projects from solution file to streamline desktop-focused development" />
+    <MESSAGE value="Remove iOS and Android project references from solution file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove iOS and Android project references from solution file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -22,15 +22,18 @@ public class PrinterControlExecutor
             case "start-print":
                 await _stateManager.SetStateAsync("printer-status", "Printing", "User command");
                 await _stateManager.SetStateAsync("print-started", DateTime.UtcNow, "Start command");
+                await _stateManager.SetStateAsync(controlId, "COMPLETED", "Button executed");
                 return "Print started successfully";
 
             case "pause-print":
                 await _stateManager.SetStateAsync("printer-status", "Paused", "User command");
+                await _stateManager.SetStateAsync(controlId, "COMPLETED", "Button executed");
                 return "Print paused";
 
             case "stop-print":
                 await _stateManager.SetStateAsync("printer-status", "Stopped", "User command");
                 await _stateManager.SetStateAsync("print-progress", 0.0, "Print stopped");
+                await _stateManager.SetStateAsync(controlId, "COMPLETED", "Button executed");
                 return "Print stopped";
 
             case "bed-temperature":
